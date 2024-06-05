@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto' , sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 50px;
 }
 
-.container{
+.container {
     width: 90%;
     max-width: 1400px;
     margin: auto;
@@ -25,31 +25,31 @@ h1{
 
 /* ---menu de navegacion----- */
 
-header::before{
+header::before {
     content: "";
     display: block;
     margin-bottom: 80px;
 }
 
-nav{
+nav {
     width: 100%;
     height: 80px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-bottom: 1px solid transparent;
-    box-shadow: 1px 1px 10px o rgb(0,0,0,.2);
+    box-shadow: 1px 1px 10px o rgb(0, 0, 0, .2);
     position: fixed;
     top: 0;
     z-index: 100;
 }
 
-.nav{
+.nav {
     display: flex;
     height: 80px;
     width: 100%;
     align-items: center;
 }
 
-.enlaces-header{
+.enlaces-header {
     font-weight: 300;
     margin: auto;
 
@@ -58,7 +58,7 @@ nav{
 
 /* .nav > .enlaces-header > a#id */
 
-.nav .enlaces-header a{
+.nav .enlaces-header a {
     color: #5d6678;
     text-decoration: none;
     margin-left: 20px;
@@ -66,19 +66,19 @@ nav{
     border-radius: 10px;
 }
 
-.nav .enlaces-header a:hover{
+.nav .enlaces-header a:hover {
     color: #FFF;
     background-color: #bcafaf;
     border-color: #261f1f;
     transition: all ease-in-out .6s;
 }
 
-.Titulospro{
+.Titulospro {
     text-align: left;
     margin: 20px 0px;
 }
 
-.contenido-header{
+.contenido-header {
     width: 80%;
     height: 600px;
     display: flex;
@@ -86,37 +86,40 @@ nav{
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    
+
 }
 
-.contenido-header > img{
+.contenido-header>img {
     width: 300px;
-    height: 200px;
+    height: 160px;
     margin-left: 50px;
     animation: ease-in animacion 0.5s;
+    border-radius: 20px;
+
 }
 
-@keyframes animacion{
-    0%{
+@keyframes animacion {
+    0% {
         transform: scale(0);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
 
-.textos-header{
+.textos-header {
     margin: 0 0 0 30px;
 }
 
-.contenido-header p{
+.contenido-header p {
     font-weight: 300;
     margin-top: 14px;
     color: #5d6678;
     text-align: justify;
 }
 
-.contenido-header a{
+.contenido-header a {
     margin: 28px 0 0 0;
     width: 150px;
     display: inline-block;
@@ -126,32 +129,35 @@ nav{
     padding: 12px 0;
     text-decoration: none;
     font-weight: 400;
-    text-transform: uppercase ;
+    text-transform: uppercase;
     font-size: 16px;
     border-radius: 5px;
-    box-shadow: 0px 8px 32px o rgba(6, 1, 1, 0.46) ;
+    box-shadow: 0px 8px 32px o rgba(6, 1, 1, 0.46);
 }
 
-.title{
+.title {
     margin-top: 50px;
     display: block;
     width: 100%;
     text-align: center;
+    color: #ffffff;
 }
 
-.educacion{
-    background-color: #f2f2f2;
+.educacion {
+    background-color: #904646;
+    height: auto;
 }
 
-.content-educacion{
+.content-educacion {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
     justify-content: space-around;
+
 }
 
-.articulo{
-    width: 30%;
+.articulo {
+    width: 500px;
     background-color: #fff;
     margin-top: 50px;
     border-radius: 10px;
@@ -159,35 +165,37 @@ nav{
     transition: all ease-in-out .5s;
 }
 
-.articulo:hover{
+.articulo:hover {
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
     color: #fff;
     background-color: #848484;
     transition: .5s;
 }
 
-.articulo > h3{
+
+.articulo>h3 {
     font-size: 24px;
     margin-top: 10px;
     text-transform: uppercase;
+    text-align: center;
+    
 }
 
-.articulo > a{
-    text-decoration: none;
-    color: #000;
+.articulo .audio{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+   
 }
 
-.articulo > a:hover{
-    color: #fff;
-    transition: .5s;
-}
+
 /* ################################## EXPERIENCIA ################################## */
 .experiencia {
-    background-color: #000000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
-.content-experience{
+.content-experience {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
@@ -221,14 +229,27 @@ nav{
     margin-bottom: 15px;
 }
 
+.content-experience .title{
+    color: #000000;
+}
+
 
 /* ################################## SKILLS ################################## */
-.content-skills {
-    display: flex; 
-    flex-wrap: wrap; 
-    margin-top: 50px;
-    justify-content: space-evenly; 
+.habilidades .title{
+    color: #ffffff;
+    padding-top: 10px;
 }
+.habilidades{
+    background-color: #904646;
+}
+
+.content-skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
 .skills {
     width: 32%;
     margin-bottom: 70px;
@@ -241,7 +262,7 @@ nav{
 
 .skills h2 {
     margin-top: 20px;
-    color: black;     
+    color: black;
 }
 
 .skills img {
@@ -271,19 +292,26 @@ nav{
 }
 
 /* ################################## CERTIFICADOS ################################## */
-.certificados {
-    background: #f2f2f2;
+.contactos {
+    background: #ffffff;
     /* padding: 0 100px; */
 }
 
-.content-certificados {
+.contactos .title {
+    padding-top: 30px;
+    color: #000000;
+    
+}
+
+.content-contactos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     padding: 30px 0;
 }
 
-.certificate {
+.contact {
     background-color: #fff;
     border: 1px solid #ffffff;
     border-radius: 5px;
@@ -294,63 +322,77 @@ nav{
     text-align: center;
 }
 
-.certificate img {
+.contact img {
     height: 100px;
     width: auto;
     border-radius: 5px;
 }
 
-.certificate:hover {
+.contact:hover {
     box-shadow: 0 4px 10px rgba(16, 29, 48, .26);
     color: #fff;
     background: #848484;
-    transition: .5s;    
+    transition: .5s;
 }
 
-.certificate a {
+.contact a {
     text-decoration: none;
     color: #565759;
 }
 
-.certificate a:hover {
+.contact a:hover {
     color: #fff;
 }
 
 @media screen and (max-width:600px) {
-    h1{
+    h1 {
         font-size: 25px;
     }
-    .contenido-header{
+
+    .contenido-header {
         width: 100%;
         height: 560px;
     }
-    .contenido-header>img{
+
+    .contenido-header>img {
         width: 120px;
         height: 120px;
         animation: ease-in animacion 0.5s;
         margin: 20px 0;
     }
-    .articulo, .experience, .certificate, .skills{
+
+    .articulo,
+    .experience,
+    .certificate,
+    .skills {
         width: 90%;
     }
-    .skills{
+
+    .skills {
         margin-bottom: 20px;
     }
-    .articulo, .experience, .content-skills{
+
+    .articulo,
+    .experience,
+    .content-skills {
         margin-top: 20px;
     }
-    .content-skills{
+
+    .content-skills {
         margin-bottom: 20px;
     }
-    .content-certificados{
+
+    .content-certificados {
         padding: 0;
         margin-bottom: 30px;
     }
-    .certificate{
+
+    .certificate {
         margin: 10px;
         padding: 10px;
     }
-    .enlaces-header{
+
+    .enlaces-header {
         position: fixed;
         background-color: #d03d3d;
         top: 0;
@@ -362,7 +404,8 @@ nav{
         flex-direction: column;
         clip-path: circle(0.0% at 0 0);
     }
-    .nav .enlaces-header a{
+
+    .nav .enlaces-header a {
         color: #fff;
         background-color: #cf5c6c;
         text-transform: uppercase;
@@ -371,14 +414,17 @@ nav{
         width: 50%;
         text-align: center;
     }
-    .nav .enlaces-header a:hover{
+
+    .nav .enlaces-header a:hover {
         color: #d03d3d;
         background-color: #fff;
     }
-    .hamburguer{
+
+    .hamburguer {
         display: block;
     }
-    .nav .hamburgueropen{
+
+    .nav .hamburgueropen {
         clip-path: circle(150% at 0 0);
     }
 
